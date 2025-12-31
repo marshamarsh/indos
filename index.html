@@ -10,24 +10,32 @@
   <main class="container">
     <section class="card-row">
       <aside class="left-card card-animate">
-        <div class="portrait-wrap">
-          <!-- Ganti images/profile.jpg dengan foto utama -->
-          <img src="marsha.jpg" alt="Foto profil" class="portrait" />
+        <div class="portrait-wrap" aria-hidden="false">
+          <!-- Jika kamu meletakkan marsha.jpg di folder images/, ubah src menjadi "images/marsha.jpg" -->
+          <img src="marsha.jpg"
+               alt="Foto profil"
+               class="portrait"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%232a7cff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2236%22 fill=%22%23fff%22%3EFoto%3C/text%3E%3C/svg%3E';" />
         </div>
         <h1 class="name">Marsha Orliney</h1>
         <blockquote class="quote">"Some days all I need is a little blue magic: a soft playlist, a cute outfit, and the reminder that I'm allowed to grow gently, slowly, beautifully."</blockquote>
       </aside>
 
-      <section class="right-card card-animate delay">
+      <section class="right-card card-animate delay" aria-labelledby="headline">
         <div class="badge">The Blue Aura of Marsha Orliney</div>
-        <h2 class="headline">Marsha Orliney</h2>
+        <h2 id="headline" class="headline">Marsha Orliney</h2>
         <p class="lead">
-          Marsha Orliney moves through the world in soft blue hues — calm, composed, and quietly magnetic. She brings calm and clarity to noisy days. Everything about her feels like a slow morning by the sea: comforting, delicate, and beautifully serene.
-        </p>
+        A new year means a fresh page not to erase the past, but to write it better.
+        Thank you to everyone who stayed, supported, and grew together through the highs and lows.
+        May this year bring calmer days, braver choices, and kinder hearts.
+        May this year bring calmer days, braver choices, and kinder hearts.
+        Semoga kita semua diberi kesehatan, ketenangan pikiran, dan cukup kekuatan buat ngejalanin hari-hari ke depan.
+        Less pressure, more progress. Less fear, more faith.
+        Cheers to new beginnings and becoming a better version of ourselves, one step at a time</p>
       </section>
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" aria-label="Galeri foto">
       <h3 class="gallery-title">Gallery</h3>
       <div class="gallery-grid">
         <a class="thumb" href="helga.html" aria-label="Buka halaman Helga">
